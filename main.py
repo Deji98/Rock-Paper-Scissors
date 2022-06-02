@@ -1,3 +1,7 @@
+# R represent rock
+# P represt Paper
+# S represent scissors
+
 import random
 
 while True:
