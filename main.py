@@ -7,44 +7,45 @@ import random
 while True:
     choices = ["R", "P", "S"]
 
-    computer = random.choice(choices)
+    cpu = random.choice(choices)
     player = None
 
     while player not in choices:
+        print("erorr, please make a choice")
         player = input("R, P, or S?: ").upper()
 
-    if player == computer:
-        print("computer: ", computer)
+    if player == cpu:
+        print("cpu: ", cpu)
         print("player: ", player)
         print("Tie!")
 
     elif player == "R":
-        if computer == "P":
-            print("computer: ", computer)
+        if cpu == "P":
+            print("cpu: ", cpu)
             print("player: ", player)
             print("You lose!")
-        if computer == "S":
-            print("computer: ", computer)
+        if cpu == "S":
+            print("cpu: ", cpu)
             print("player: ", player)
             print("You win!")
 
     elif player == "S":
-        if computer == "R":
-            print("computer: ", computer)
+        if cpu == "R":
+            print("cpu: ", cpu)
             print("player: ", player)
             print("You lose!")
-        if computer == "P":
-            print("computer: ", computer)
+        if cpu == "P":
+            print("cpu: ", cpu)
             print("player: ", player)
             print("You win!")
 
     elif player == "P":
-        if computer == "S":
-            print("computer: ", computer)
+        if cpu == "S":
+            print("cpu: ", cpu)
             print("player: ", player)
             print("You lose!")
-        if computer == "R":
-            print("computer: ", computer)
+        if cpu == "R":
+            print("cpu: ", cpu)
             print("player: ", player)
             print("You win!")
 
